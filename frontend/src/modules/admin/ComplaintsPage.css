@@ -1,0 +1,121 @@
+/* ComplaintsPage.css */
+
+.complaints-page {
+  text-align: center;
+  margin: 20px;
+  position: relative;
+}
+
+.title {
+  font-size: 4rem; /* Enlarge title by 4x */
+  margin-bottom: 20px;
+  position: relative;
+  display: inline-block;
+  font-weight: bold; /* Make title bold */
+}
+
+.title::after {
+  content: '✨'; /* Add sparkle effect */
+  position: absolute;
+  top: 0;
+  left: 100%;
+  font-size: 2rem;
+  color: gold;
+  animation: sparkle 1s infinite;
+}
+
+@keyframes sparkle {
+  0% { opacity: 1; }
+  50% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+.complaint-details {
+  margin: 0 auto;
+  max-width: 600px;
+  text-align: left;
+  border: 2px solid #007bff; /* Dark blue border */
+  border-radius: 8px; /* Rounded corners */
+  padding: 1rem;
+  background-color: #f8f9fa; /* Light background color */
+}
+
+.status-box {
+  border: 4px double #003366; /* Dark blue double border */
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 600px;
+  background-color: #fff; /* White background */
+  position: relative;
+}
+
+.progress-container {
+  margin: 20px 0;
+  border: 2px solid black; /* Black border */
+  padding: 5px;
+  width: 100%;
+  max-width: 600px;
+  margin: 20px auto;
+  position: relative;
+  height: 20px; /* Set a height for visibility */
+  background-color: #f9f9f9; /* Light background for contrast */
+}
+
+.progress-bar {
+  height: 100%;
+  background-color: green;
+  animation: blink 1s infinite; /* Add blink effect */
+}
+
+@keyframes blink {
+  0% { opacity: 1; }
+  50% { opacity: 0.5; }
+  100% { opacity: 1; }
+}
+
+.home-link {
+  display: inline-block;
+  margin-top: 20px;
+  font-size: 1.2rem;
+  color: blue;
+  text-decoration: none;
+}
+
+.home-link:hover {
+  text-decoration: underline;
+}
+
+.footer {
+  background-color: black;
+  color: white;
+  padding: 20px;
+  
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 0.9rem;
+  margin-top: 100px; /* Add gap between content and footer */
+}
+
+.footer p {
+  margin: 5px 0;
+}
+
+.complaint-info-box {
+  border: 2px solid #007bff; /* Dark blue border */
+  border-radius: 8px; /* Rounded corners */
+  padding: 1rem;
+  background-color: #e0f7ff; /* Light blue background for contrast */
+  margin: 20px auto;
+  max-width: 600px;
+  text-align: left;
+}
+
+.complaint-info {
+  margin-bottom: 1rem;
+  font-size: 1.2rem; /* Increase size of text */
+}
+
+.complaint-info label {
+  font-weight: bold; /* Make labels bold */
+}

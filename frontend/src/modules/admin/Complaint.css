@@ -1,0 +1,114 @@
+/* Complaint.css */
+
+.complaint-form {
+    max-width: 600px; /* Set a maximum width for the form */
+    margin: 0 auto; /* Center the form horizontally */
+    padding: 2rem; /* Add padding inside the form */
+    border: 1px solid #007bff; /* Dark blue border */
+    border-radius: 8px; /* Rounded corners */
+    background-color: #f8f9fa; /* Light background color */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow for a lifted effect */
+  }
+  
+  .complaint-textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border-radius: 4px;
+    border: 1px solid #ccc; /* Light grey border */
+    margin-bottom: 1rem;
+  }
+  
+  .category-box,
+  .subcategory-box,
+  .urgency-box {
+    margin-bottom: 1rem;
+    padding: 1rem;
+    border: 1px solid #007bff; /* Dark blue border */
+    border-radius: 4px;
+    background-color: #e0f7ff; /* Light blue background for contrast */
+  }
+  
+  .category-select,
+  .urgency-select {
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 4px;
+  }
+  
+  .submit-button {
+    background-color: #003366; /* Dark blue background */
+    color: #fff; /* White text color */
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .submit-button:hover {
+    background-color: #002244; /* Darker blue for hover effect */
+  }
+  
+  .submitted {
+    /* Any additional styles for when the form is submitted, if needed */
+  }
+  
+  .submission-time {
+    margin-top: 1rem;
+  }
+  
+  .actions {
+    margin-top: 1rem;
+  }
+  
+  .view-status-button,
+  .register-button {
+    margin-right: 0.5rem;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .view-status-button {
+    background-color: #138496; /* Green background */
+    color: #fff;
+  }
+  
+  .view-status-button:hover {
+    background-color: #0e626f; /* Darker green for hover effect */
+  }
+  
+  .register-button {
+    background-color: #138496; /* Blue background */
+    color: #fff;
+  }
+  
+  .register-button:hover {
+    background-color:#0e626f ; /* Darker blue for hover effect */
+  }
+  
+  .complaint-form h2 {
+    font-size: 2rem; /* Enlarge the heading */
+    margin-bottom: 1.5rem; /* Add margin below the heading */
+    font-weight: bold; /* Make the heading bold */
+  }
+  
+  .category-box h3,
+  .subcategory-box h3,
+  .urgency-box h3 {
+    margin-bottom: 0.5rem;
+    font-weight: bold; /* Make labels bold */
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold; /* Make labels bold */
+  }
+  
+  input[type="radio"] {
+    margin-right: 0.5rem;
+  }
+  
