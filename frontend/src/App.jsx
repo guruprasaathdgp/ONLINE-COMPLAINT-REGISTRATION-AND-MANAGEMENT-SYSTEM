@@ -7,6 +7,7 @@ import Register from './modules/common/Register'
 import ComplaintForm from './modules/admin/ComplaintForm'; 
 import ComplaintsPage from '/src/modules/admin/Complaintspage.jsx';
 import './App.css';
+
 function App() {
 
   return (

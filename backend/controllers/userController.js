@@ -20,7 +20,7 @@ exports.register = async (req, res) => {
         res.status(500).send('Server error');
     }
 };
-exports.login = async (req, res) => {
+const login = async (req, res) => {
     const { email, password } = req.body;
     try {
         const user = await User.findOne({ email });
@@ -37,3 +37,12 @@ exports.login = async (req, res) => {
         res.status(500).send('Server error');
     }
 };
+const registerUser = (req, res) => {
+    console.log(req.body); // Check the received data
+    const { name, phone, email, password } = req.body;
+
+    // Handle registration logic (e.g., save to database)
+    res.json({ success: true });
+};
+
+module.exports = { login, registerUser }; 

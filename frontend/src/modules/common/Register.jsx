@@ -17,11 +17,8 @@ const styles = {
         position: 'relative',
         minHeight: '100vh',
         background: 'linear-gradient(-45deg, #e6e6fa 40%, #fafafa 50%, #e6e6fa 60%)',
-
         backgroundSize: '300%',
         backgroundPositionX: '40%',
-
-        //background: '#e6e6fa', // Light purple background
         overflow: 'hidden',
     },
     showerEffect: {
@@ -71,19 +68,23 @@ function Register() {
     const handleSubmit = (e) => {
         e.preventDefault();
         setIsSubmitting(true);
+        const isLoginSuccessful = true; // Change this to false to simulate a failed login
 
-        axios.post('http://localhost:3001/register', { name, phone, email, password, user_type: userType })
-            .then(result => {
-                console.log(result);
-                alert('Registered successfully');
-                navigate('/login');
-            })
-            .catch(err => {
-                console.log(err);
-                setIsSubmitting(false);
-            });
-    };
-
+            if (isLoginSuccessful) {
+                alert('register  successful');
+                navigate('/Login');
+            }
+        axios.post('http://localhost:5173/api/users/register', { name, phone, email, password })
+        .then(result => {
+            console.log(result); // Log the result for debugging
+            alert('Registered successfully'); // Show success message
+            navigate('/login'); // Navigate to the login page
+        })
+        .catch(err => {
+            console.log(err); // Log any errors for debugging
+            setIsSubmitting(false); // Set submitting state back to false
+        });
+};
     useEffect(() => {
         // Stop the animation after 5 seconds
         const timer = setTimeout(() => {
@@ -170,6 +171,7 @@ function Register() {
                         </div>
                         <div className="flex items-center p-6">
                             <button
+                            //onClick={navigate('/login')}
                                 type="submit"
                                 style={styles.submitButton}
                                 className="block w-full select-none rounded-lg px-6 py-3 text-center align-middle font-sans text-xs font-bold uppercase shadow-md shadow-gray-900/10 transition-all hover:shadow-lg hover:shadow-gray-900/20 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"

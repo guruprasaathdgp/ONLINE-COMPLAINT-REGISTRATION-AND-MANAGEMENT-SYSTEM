@@ -73,6 +73,7 @@ function ComplaintsPage() {
         </div>
         </div>
   
+  
     </div>
   );
 }
