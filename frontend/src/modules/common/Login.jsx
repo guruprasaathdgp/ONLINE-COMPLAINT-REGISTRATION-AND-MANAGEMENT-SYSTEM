@@ -29,6 +29,12 @@ const Login = () => {
             alert('An error occurred during login. Please try again.');
         }
     };
+    // try {
+    //     const response = await axios.post('http://localhost:5713/api/login', {
+    //       email,
+    //       password,
+    //     });
+  
 
     const onChange = (e) => {
         const { name, value } = e.target;

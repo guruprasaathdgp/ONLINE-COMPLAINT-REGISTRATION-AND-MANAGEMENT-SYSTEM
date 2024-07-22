@@ -6,6 +6,7 @@ function ComplaintsPage() {
   const location = useLocation();
   const { formData } = location.state || {};
 
+      
   // Determine status based on urgency
   const getStatus = (urgency) => {
     if (urgency === 'High') {
